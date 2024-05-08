@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Mohamed</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+	border: 1.5px solid #555; /* Add border */
+	margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: contain; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- About Section -->
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="About Me">
+    <p>Experienced Software Engineer and Solution Architect with a track record of delivering high-impact technical solutions.  Leveraging a comprehensive skill set encompassing cloud computing, system architecture, and software development, I excel in crafting innovative and scalable architectures those align with strategic business objectives.</p>
+    <p>With a Goal-oriented and collaborative business mindset, I lead cross-functional teams towards achieving targets and performing beyond expectations. I am passionate about digital transformation and giving back to the community. I am always looking for opportunities to drive meaningful impact using technology within a dynamic and collaborative environment.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/Bandwith Utilization Monitoring Using Pysnmp.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Bandwith Monitoring App</h5>
+            <p class="card-text">Monitor bandwidth usage, track changes, and expand resources accordingly for business-critical networks; demonstrated via Python app</p>
+            <a href="https://alimo7amed93.blogspot.com/2022/03/link-bandwith-utilizaiton-monitoring.html" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/alimo7amed93/SNMP-BasedBandwithMonitoring" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/Time & Weather Django App.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Time & Weather Django WebApp</h5>
+            <p class="card-text">Django app tracks time-zones, weather worldwide, implemented with openweathermap.org API, Docker containerization.</p>
+            <a href="https://alimo7amed93.blogspot.com/2022/05/time-weather-django-app.html" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/alimo7amed93/TimeWeatherDjangoApp" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/Bandwidth Time Series Forecasting.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Bandwidth Time Series Forecasting</h5>
+            <p class="card-text">Extending bandwidth monitoring topic, implementing time series forecasting using Linear Regression & XGBoost. Dataset: Seattle Internet Exchange.</p>
+            <a href="https://alimo7amed93.blogspot.com/2022/04/bandwidth-utilizaiton-forecasting.html" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/alimo7amed93/TimeSeriesForecastingforBWutilization" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/Azure Cloud-based Streaming APP.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Azure Cloud-based Streaming APP</h5>
+            <p class="card-text">Cloud app that showcases on-demand streaming with benefits such as tailored experiences, content control, bandwidth efficiency, and insightful analytics</p>
+            <a href="https://alimo7amed93.blogspot.com/2022/08/azuremediaservicedemo.html" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/alimo7amed93/AzureMediaServiceDemo" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Certificates Section -->
+<section id="Certificates" class="skills-section bg-white" id="Certificates">
+  <div class="container">
+    <h2 class="text-center">Certificates</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/AZ305.png" class="card-img-top" alt="AZ305">
+          <div class="card-body">
+            <h5 class="text-center card-title">Azure Solution Architect</h5>
+            <p class="text-center card-text">The Azure Solution Architect cert validates expertise in designing scalable, secure cloud solutions on Azure</p>
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/AZ104.png" class="card-img-top" alt="AZ104">
+          <div class="card-body">
+            <h5 class="text-center card-title">Azure Admin</h5>
+            <p class="text-center card-text">The Azure Admin cert validates skills in managing and securing Azure cloud infrastructure effectively</p>
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/AZ204.png" class="card-img-top" alt="AZ204">
+          <div class="card-body">
+            <h5 class="text-center card-title">Azure Developer</h5>
+            <p class="text-center card-text">Azure Developer cert validates proficiency in building, deploying, and maintaining Azure cloud applications</p>
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/?practice-assessment-type=certification" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/JNCIA.png" class="card-img-top" alt="JNCIA">
+          <div class="card-body">
+            <h5 class="text-center card-title">JNCIA-DevOps</h5>
+            <p class="text-center card-text">JNCIA-DevOps cert validates skills in Juniper Networks technologies for DevOps practices and automation</p>
+            <a href="https://www.juniper.net/us/en/training/certification/tracks/devops/jncia-devops.html" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Skill 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/IBMDSP.png" class="card-img-top" alt="IBMDSP">
+          <div class="card-body">
+            <h5 class="text-center card-title">IBM DS Professional</h5>
+            <p class="text-center card-text">The IBM DS Professional certifies expertise in designing solutions with IBM Data Science tools</p>
+            <a href="https://www.coursera.org/professional-certificates/ibm-data-analyst?adpostion=&utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA__coursera_FTCOF_career-academy_pmax-multiple-audiences-country-multi-set2&campaignid=20882109092&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_tYnewFndykg9OxTtHG2FI7Pcgu3fTAoYhR0SO8TRYtRC-uIyZ_m4aAn-eEALw_wcB" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Skill 6 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/Certificates/AZ900.png" class="card-img-top" alt="AZ900">
+          <div class="card-body">
+            <h5 class="text-center card-title">Azure Fundamentals</h5>
+            <p class="text-center card-text">The Azure Fundamentals certifies basic knowledge of cloud concepts, Azure services, and deployment</p>
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" class="btn btn-outline-primary">Link to certificate details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> alimo7amed93@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i>  +447718499827</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://linkedin.com/in/ali-mohamed-977388b1" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/alimo7amed93" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://alimo7amed93.blogspot.com" target="_blank">
+          <img src="icons/blog.png" alt="Blog" class="social-icon">
+          Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Certificates">Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
